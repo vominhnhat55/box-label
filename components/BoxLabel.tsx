@@ -52,7 +52,7 @@ export default function BoxLabel({
         <div className='flex items-start justify-between'>
           <div className='shrink-0'>
             <img
-              src='/nutty.png'
+              src='/Nutty Factory logo_01.png'
               alt='Logo'
               width={65}
               height={23}
@@ -65,10 +65,10 @@ export default function BoxLabel({
           </div>
           <div className='text-right flex-1'>
             <div className='font-bold text-sm text-[#111827] mb-0.5'>
-              KCN OSIFF
+              C3, Khu xưởng OSSIF
             </div>
             <div className='text-[#374151] text-[10px] leading-tight'>
-              Huyện Cần Giuộc, Tỉnh Tây Ninh
+              KCN Tân Kim, Xã Cần Giuộc, Tỉnh Tây Ninh, Việt Nam
             </div>
           </div>
         </div>
