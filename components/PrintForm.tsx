@@ -2,6 +2,8 @@
 import {useState} from 'react';
 import BoxLabel from './BoxLabel';
 import {products} from '@/data/products';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 export default function PrintForm() {
   const [showPreview, setShowPreview] = useState(false);
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -23,9 +25,8 @@ export default function PrintForm() {
     (product) =>
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.barcodeProduct.includes(searchQuery)
+      product.barcodeProduct?.includes(searchQuery)
   );
-
   const handleProductSelect = (product: (typeof products)[0]) => {
     setSelectedProductId(product.id);
     setSearchQuery(`${product.name} (${product.code})`);
@@ -34,7 +35,7 @@ export default function PrintForm() {
       ...data,
       name: product.name,
       code: product.code,
-      barcodeProduct: product.barcodeProduct,
+      barcodeProduct: product.barcodeProduct || '',
       qty: product.defaultQty,
     });
   };
@@ -75,7 +76,6 @@ export default function PrintForm() {
     // Chỉ cho phép số và chữ, tự động chuyển
     setData({...data, note: value});
   };
-
   const isLotValid = !data.lot || validateLot(data.lot);
 
   const formatDate = (dateString: string) => {
@@ -103,6 +103,31 @@ export default function PrintForm() {
     data.nsx &&
     data.hsd;
 
+  const handleDownloadPdf = async () => {
+    const element = document.querySelector('.print-area-box') as HTMLElement;
+    if (!element) return;
+
+    try {
+      const canvas = await html2canvas(element, {
+        scale: 4, // Higher scale for better quality
+        useCORS: true,
+        logging: false,
+      });
+
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: [100, 80],
+      });
+
+      pdf.addImage(imgData, 'PNG', 0, 0, 100, 80);
+      pdf.save(`${data.name || 'label'}.pdf`);
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      alert('Có lỗi xảy ra khi tạo PDF');
+    }
+  };
   return (
     <>
       {/* FORM – không in */}
@@ -282,13 +307,20 @@ export default function PrintForm() {
           value={data.note}
           onChange={(e) => handleNoteChange(e.target.value)}
         />
-        <div className='flex gap-2'>
+        <div className='flex gap-2 flex-wrap'>
           <button
             disabled={!isValid}
             onClick={() => setShowPreview(true)}
             className='flex-1 bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
           >
             Xem trước
+          </button>
+          <button
+            disabled={!isValid}
+            onClick={handleDownloadPdf}
+            className='flex-1 bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
+          >
+            Tải PDF
           </button>
           <button
             disabled={!isValid}
