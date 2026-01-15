@@ -5,7 +5,7 @@ import {products} from '@/data/products';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 export default function PrintForm() {
-  const [showPreview, setShowPreview] = useState(false);
+  // const [showPreview, setShowPreview] = useState(false);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [selectedProductId, setSelectedProductId] = useState<string>('');
@@ -310,36 +310,10 @@ export default function PrintForm() {
         <div className='flex gap-2 flex-wrap'>
           <button
             disabled={!isValid}
-            onClick={() => setShowPreview(true)}
-            className='flex-1 bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
-          >
-            Xem trước
-          </button>
-          <button
-            disabled={!isValid}
             onClick={handleDownloadPdf}
             className='flex-1 bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
           >
             Tải PDF
-          </button>
-          <button
-            disabled={!isValid}
-            onClick={() => {
-              document.body.classList.add('box-label-print');
-              const style = document.createElement('style');
-              style.id = 'print-page-size';
-              style.textContent = '@page { size: 100mm 80mm; margin: 0; }';
-              document.head.appendChild(style);
-              window.print();
-              setTimeout(() => {
-                document.body.classList.remove('box-label-print');
-                const style = document.getElementById('print-page-size');
-                if (style) style.remove();
-              }, 100);
-            }}
-            className='flex-1 bg-black text-white px-4 py-2 rounded font-semibold hover:bg-gray-800 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
-          >
-            In tem
           </button>
         </div>
       </div>
@@ -348,7 +322,7 @@ export default function PrintForm() {
       {isValid && <BoxLabel {...data} />}
 
       {/* PREVIEW MODAL */}
-      {showPreview && isValid && (
+      {/* {showPreview && isValid && (
         <div
           className='fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-2 sm:p-4 print:hidden'
           onClick={() => setShowPreview(false)}
@@ -381,7 +355,7 @@ export default function PrintForm() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }
