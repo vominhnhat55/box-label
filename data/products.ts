@@ -4,6 +4,8 @@ export interface Product {
   code: string;
   barcodeProduct: string | null;
   defaultQty: number;
+  netWeight: number;
+  packType: string;
 }
 
 import rawProducts from './dmsp_with_code.json';
