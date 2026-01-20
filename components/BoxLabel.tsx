@@ -1,7 +1,6 @@
 'use client';
 import {useEffect, useRef} from 'react';
 import JsBarcode from 'jsbarcode';
-import Image from 'next/image';
 type Props = {
   name: string;
   code: string;
@@ -11,7 +10,8 @@ type Props = {
   donggoi: string;
   hsd: string;
   barcodeProduct: string;
-  note: string;
+  netWeight: number;
+  packType: string;
 };
 export default function BoxLabel({
   name,
@@ -22,7 +22,8 @@ export default function BoxLabel({
   donggoi,
   hsd,
   barcodeProduct,
-  note,
+  netWeight,
+  packType,
 }: Props) {
   const productBarcodeRef = useRef<SVGSVGElement | null>(null);
   useEffect(() => {
@@ -54,10 +55,10 @@ export default function BoxLabel({
             <img
               src='/Nutty Factory logo_01.png'
               alt='Logo'
-              width={65}
-              height={23}
+              width={90}
+              height={40}
               style={{
-                width: '65px',
+                width: '90px',
                 height: 'auto',
                 objectFit: 'contain',
               }}
@@ -65,10 +66,11 @@ export default function BoxLabel({
           </div>
           <div className='text-right flex-1'>
             <div className='font-bold text-sm text-[#111827] mb-0.5'>
-              C3, Khu xưởng OSSIF
+              CÔNG TY TNHH KASH FINE FOOD
             </div>
             <div className='text-[#374151] text-[10px] leading-tight'>
-              KCN Tân Kim, Xã Cần Giuộc, Tỉnh Tây Ninh, Việt Nam
+              C3, Khu xưởng OSSIF <br /> KCN Tân Kim, Xã Cần Giuộc, Tỉnh Tây
+              Ninh, Việt Nam
             </div>
           </div>
         </div>
@@ -95,16 +97,28 @@ export default function BoxLabel({
               <span className='text-[#111827] font-medium text-[10px]'>
                 Số lô/series:
               </span>
-              <span className='font-bold text-[#111827] text-xs ml-1'>
+              <span className='font-bold text-[#111827] text-xl ml-1'>
                 {lot}
               </span>
             </div>
           </div>
-          <div className='text-right'>
-            <span className='text-[#111827] font-medium text-[10px]'>
-              Số lượng:
-            </span>
-            <span className='font-bold text-[#111827] text-sm ml-1'>{qty}</span>
+          <div className='space-y-1'>
+            <div className='flex items-center'>
+              <span className='text-[#111827] font-medium text-[10px]'>
+                KLT:
+              </span>
+              <span className='font-bold text-[#111827] text-sm ml-1'>
+                {netWeight}g/{packType}
+              </span>
+            </div>
+            <div className='text-right'>
+              <span className='text-[#111827] font-medium text-[10px]'>
+                Số lượng:
+              </span>
+              <span className='font-bold text-[#111827] text-sm ml-1'>
+                {qty} {packType}
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -169,11 +183,6 @@ export default function BoxLabel({
           </div>
         </div>
       ) : null}
-
-      <div className='flex gap-1 mb-1'>
-        <div className='font-bold'>Ghi chú:</div>
-        <span>{note}</span>
-      </div>
     </div>
   );
 }

@@ -19,13 +19,15 @@ export default function PrintForm() {
     donggoi: '',
     hsd: '',
     note: '',
+    netWeight: 0,
+    packType: '',
   });
   // Filter products based on search query
   const filteredProducts = products.filter(
     (product) =>
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.barcodeProduct?.includes(searchQuery)
+      product.barcodeProduct?.includes(searchQuery),
   );
   const handleProductSelect = (product: (typeof products)[0]) => {
     setSelectedProductId(product.id);
@@ -37,6 +39,8 @@ export default function PrintForm() {
       code: product.code,
       barcodeProduct: product.barcodeProduct || '',
       qty: product.defaultQty,
+      netWeight: product.netWeight,
+      packType: product.packType,
     });
   };
 
@@ -89,7 +93,7 @@ export default function PrintForm() {
 
   const handleDateChange = (
     field: 'nsx' | 'donggoi' | 'hsd',
-    value: string
+    value: string,
   ) => {
     setData({...data, [field]: formatDate(value)});
   };
@@ -218,6 +222,20 @@ export default function PrintForm() {
               <div className='text-gray-900 font-semibold'>
                 {data.barcodeProduct}
               </div>
+            </div>
+            <div>
+              <span className='text-gray-600 text-sm font-medium'>KLT : </span>
+              <span className='text-gray-900 font-semibold'>
+                {data.netWeight}g/{data.packType}
+              </span>
+            </div>
+            <div>
+              <span className='text-gray-600 text-sm font-medium'>
+                quy cách :
+              </span>
+              <span className='text-gray-900 font-semibold'>
+                {data.packType}
+              </span>
             </div>
           </div>
         )}
