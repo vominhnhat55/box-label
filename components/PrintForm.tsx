@@ -135,9 +135,11 @@ export default function PrintForm() {
     <>
       {/* FORM – không in */}
       <div className='print:hidden flex flex-col gap-3 border p-4 rounded-lg bg-white shadow-sm w-full'>
-        <h2 className='text-xl font-bold text-gray-900 mb-2'>In Tem Thùng</h2>
-
+        <h2 className='text-xl font-bold text-gray-900 mb-2 text-center'>
+          In Tem Thùng
+        </h2>
         {/* Tìm kiếm sản phẩm */}
+
         <div className='relative'>
           <label className='text-black font-medium mb-1 block'>
             Tìm kiếm sản phẩm <span className='text-red-500'>*</span>
@@ -338,9 +340,9 @@ export default function PrintForm() {
           <button
             disabled={!isValid}
             onClick={() => window.print()}
-            className='flex-1 bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors'
+            className='flex-1 bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors cursor-pointer'
           >
-            In tem
+            IN TEM
           </button>
         </div>
       </div>
