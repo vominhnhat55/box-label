@@ -124,7 +124,7 @@ export default function BoxLabel({
       </div>
 
       {/* DATES - 3 cột hoặc 2 cột nếu không có ngày đóng gói */}
-      <div className='border-b border-[#1f2937] bg-[#ffffff]'>
+      <div className='border-b border-[#1f2937] bg-[#ffffff] pb-2'>
         <div className='flex justify-between justify-between items-center'>
           {nsx && (
             <div className='text-center flex-1 border-r'>
@@ -143,7 +143,7 @@ export default function BoxLabel({
             </div>
           )}
 
-          <div className='text-center flex-1 border- '>
+          <div className='text-center flex-1  '>
             <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
               HSD
             </div>
