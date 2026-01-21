@@ -68,8 +68,8 @@ export default function BoxLabel({
             <div className='font-bold text-sm text-[#111827] mb-0.5'>
               CÔNG TY TNHH KASH FINE FOOD
             </div>
-            <div className='text-[#374151] text-[10px] leading-tight'>
-              C3, Khu xưởng OSSIF <br /> KCN Tân Kim, Xã Cần Giuộc, Tỉnh Tây
+            <div className='text-[#111827] font-bold text-[10px] '>
+              C3, Khu xưởng OSSIF, KCN Tân Kim, <br /> Xã Cần Giuộc, Tỉnh Tây
               Ninh, Việt Nam
             </div>
           </div>

@@ -104,7 +104,6 @@ export default function PrintForm() {
     data.lot &&
     validateLot(data.lot) &&
     data.qty > 0 &&
-    data.nsx &&
     data.hsd;
 
   const handleDownloadPdf = async () => {
