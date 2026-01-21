@@ -124,8 +124,33 @@ export default function BoxLabel({
       </div>
 
       {/* DATES - 3 cột hoặc 2 cột nếu không có ngày đóng gói */}
-      <div className='px-2.5 py-1.5 border-b border-[#1f2937] bg-[#ffffff]'>
-        {donggoi ? (
+      <div className='border-b border-[#1f2937] bg-[#ffffff]'>
+        <div className='flex justify-between justify-between items-center'>
+          {nsx && (
+            <div className='text-center flex-1 border-r'>
+              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
+                NSX
+              </div>
+              <div className='font-bold text-[#111827] text-xs'>{nsx}</div>
+            </div>
+          )}
+          {donggoi && (
+            <div className='text-center flex-1 border-r'>
+              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
+                NDG
+              </div>
+              <div className='font-bold text-[#111827] text-xs'>{donggoi}</div>
+            </div>
+          )}
+
+          <div className='text-center flex-1 border- '>
+            <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
+              HSD
+            </div>
+            <div className='font-bold text-[#111827] text-xs'>{hsd}</div>
+          </div>
+        </div>
+        {/* {donggoi ? (
           <div className='grid grid-cols-3 divide-x divide-[#1f2937]'>
             <div className='text-center'>
               <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
@@ -161,10 +186,11 @@ export default function BoxLabel({
               <div className='font-bold text-[#111827] text-xs'>{hsd}</div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
 
       {/* BARCODE - Bottom section */}
+
       {barcodeProduct ? (
         <div className='px-2.5 py-1.5 bg-[#ffffff] flex-1 flex flex-col justify-center'>
           <div className='flex justify-center items-center'>
