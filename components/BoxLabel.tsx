@@ -33,7 +33,7 @@ export default function BoxLabel({
         JsBarcode(productBarcodeRef.current, barcodeProduct, {
           format: 'CODE128',
           width: 2,
-          height: 45,
+          height: 35,
           displayValue: false,
           margin: 0,
         });
@@ -55,10 +55,10 @@ export default function BoxLabel({
             <img
               src='/Nutty Factory logo_01.png'
               alt='Logo'
-              width={90}
+              width={80}
               height={40}
               style={{
-                width: '90px',
+                width: '80px',
                 height: 'auto',
                 objectFit: 'contain',
               }}
@@ -77,7 +77,7 @@ export default function BoxLabel({
       </div>
       {/* TÊN SẢN PHẨM */}
       <div className='px-2.5 py-1.5 border-b border-[#1f2937] bg-[#ffffff]'>
-        <div className='font-bold uppercase text-base leading-tight text-[#111827] text-center tracking-wide'>
+        <div className='font-extrabold uppercase text-[20px] leading-tight text-[#111827] text-center tracking-wide'>
           {name}
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function BoxLabel({
               <span className='text-[#111827] font-medium text-[10px]'>
                 Số lô/series:
               </span>
-              <span className='font-bold text-[#111827] text-xl ml-1'>
+              <span className='font-bold text-[#111827] text-[24px] ml-1'>
                 {lot}
               </span>
             </div>
@@ -150,63 +150,23 @@ export default function BoxLabel({
             <div className='font-bold text-[#111827] text-xs'>{hsd}</div>
           </div>
         </div>
-        {/* {donggoi ? (
-          <div className='grid grid-cols-3 divide-x divide-[#1f2937]'>
-            <div className='text-center'>
-              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
-                NSX
-              </div>
-              <div className='font-bold text-[#111827] text-xs'>{nsx}</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
-                NDG
-              </div>
-              <div className='font-bold text-[#111827] text-xs'>{donggoi}</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
-                HSD
-              </div>
-              <div className='font-bold text-[#111827] text-xs'>{hsd}</div>
-            </div>
-          </div>
-        ) : (
-          <div className='grid grid-cols-2 divide-x divide-[#1f2937]'>
-            <div className='text-center'>
-              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
-                NSX
-              </div>
-              <div className='font-bold text-[#111827] text-xs'>{nsx}</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-[#111827] font-bold text-[10px] uppercase mb-0.5'>
-                HSD
-              </div>
-              <div className='font-bold text-[#111827] text-xs'>{hsd}</div>
-            </div>
-          </div>
-        )} */}
       </div>
 
       {/* BARCODE - Bottom section */}
 
       {barcodeProduct ? (
-        <div className='px-2.5 py-1.5 bg-[#ffffff] flex-1 flex flex-col justify-center'>
+        <div className='px-2 py-1  flex-1 flex flex-col justify-center'>
           <div className='flex justify-center items-center'>
             <svg
               ref={productBarcodeRef}
-              width='75mm'
-              height='17mm'
+              width='70mm'
+              height='15mm'
               className='max-w-full h-auto block'
             />
           </div>
-          <div className='text-center mb-1'>
-            <span className='text-[#111827] font-bold text-[10px] uppercase'></span>
-            <span className='text-[#111827] font-bold text-xs'>
-              {barcodeProduct}
-            </span>
-          </div>
+          <p className='text-black font-bold text-[10px] text-center'>
+            {barcodeProduct}
+          </p>
         </div>
       ) : null}
     </div>
