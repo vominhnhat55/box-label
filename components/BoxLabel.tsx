@@ -89,7 +89,7 @@ export default function BoxLabel({
               <span className='text-[#111827] font-medium text-[10px]'>
                 Mã SP:
               </span>
-              <span className='font-bold text-[#111827] text-xs ml-1'>
+              <span className='font-bold text-[#111827] text-sm ml-1'>
                 {code}
               </span>
             </div>
@@ -164,7 +164,7 @@ export default function BoxLabel({
               className='max-w-full h-auto block'
             />
           </div>
-          <p className='text-black font-bold text-[10px] text-center'>
+          <p className='text-black font-bold text-[10px] text-center hidden'>
             {barcodeProduct}
           </p>
         </div>
