@@ -115,7 +115,7 @@ export default function BoxLabel({
               <span className='text-[#111827] font-medium text-[10px]'>
                 Số lượng:
               </span>
-              <span className='font-bold text-[#111827] text-sm ml-1'>
+              <span className='font-bold text-[#111827] text-[24px] ml-1'>
                 {qty} {packType}
               </span>
             </div>
