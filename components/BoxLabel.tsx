@@ -45,7 +45,7 @@ export default function BoxLabel({
 
   return (
     <div
-      className='print-area-box w-[100mm] h-[80mm] border-2 border-[#1f2937] bg-[#ffffff] text-[#111827] flex flex-col'
+      className='print-area-box w-[100mm] h-[80mm] border-2 border-[#1f2937] bg-[#ffffff] flex flex-col text-black'
       style={{boxSizing: 'border-box'}}
     >
       {/* HEADER - Logo và thông tin công ty */}
@@ -65,10 +65,10 @@ export default function BoxLabel({
             />
           </div>
           <div className='text-right flex-1'>
-            <div className='font-bold text-sm text-[#111827] mb-0.5'>
+            <div className='font-bold text-sm mb-0.5'>
               CÔNG TY TNHH KASH FINE FOOD
             </div>
-            <div className='text-[#111827] font-bold text-[10px] '>
+            <div className='font-bold text-[10px] '>
               C3, Khu xưởng OSSIF, KCN Tân Kim, <br /> Xã Cần Giuộc, Tỉnh Tây
               Ninh, Việt Nam
             </div>
@@ -86,20 +86,12 @@ export default function BoxLabel({
         <div className='flex justify-between items-start'>
           <div className='space-y-1'>
             <div className='flex items-center'>
-              <span className='text-[#111827] font-medium text-[10px]'>
-                Mã SP:
-              </span>
-              <span className='font-bold text-[#111827] text-sm ml-1'>
-                {code}
-              </span>
+              <span className=' font-medium text-[10px]'>Mã SP:</span>
+              <span className='font-bold  text-sm ml-1'>{code}</span>
             </div>
             <div className='flex items-center'>
-              <span className='text-[#111827] font-medium text-[10px]'>
-                Số lô/series:
-              </span>
-              <span className='font-bold text-[#111827] text-[24px] ml-1'>
-                {lot}
-              </span>
+              <span className=' font-medium text-[10px]'>Số lô/series:</span>
+              <span className='font-bold  text-[24px] ml-1'>{lot}</span>
             </div>
           </div>
           <div className='space-y-1'>
@@ -124,7 +116,7 @@ export default function BoxLabel({
       </div>
 
       {/* DATES - 3 cột hoặc 2 cột nếu không có ngày đóng gói */}
-      <div className='border-b border-[#1f2937] bg-[#ffffff] pb-2'>
+      <div className='border-b border-[#1f2937] bg-[#ffffff] '>
         <div className='flex justify-between justify-between items-center'>
           {nsx && (
             <div className='text-center flex-1 border-r'>
