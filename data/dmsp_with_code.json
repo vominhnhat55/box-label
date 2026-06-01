@@ -6145,5 +6145,185 @@
     "defaultQty": 24.0,
     "netWeight": 200.0,
     "packType": "Gói"
+  },
+  {
+    "id": "BXN150-250D-C",
+    "name": "Bí xanh nướng hộp 150g",
+    "code": "BXN150-250D-C",
+    "barcodeProduct": "8935292207184",
+    "defaultQty": 24,
+    "netWeight": 150,
+    "packType": "Hộp"
+  },
+  {
+    "id": "OCN100-250D-C",
+    "name": "Óc chó nướng Hộp 150g",
+    "code": "OCN100-250D-C",
+    "barcodeProduct": "8935292207191",
+    "defaultQty": 24,
+    "netWeight": 100,
+    "packType": "Hộp"
+  },
+  {
+    "id": "KT150-ZN120-C",
+    "name": "Kỷ tử  gói 150g",
+    "code": "KT150-ZN120-C",
+    "barcodeProduct": "8935292207917",
+    "defaultQty": 24,
+    "netWeight": 150,
+    "packType": "Hộp"
+  },
+  {
+    "id": "(4+1)-XSD180-ZN120-X",
+    "name": "Xoài gói 180g(X) (Hàng đóng combo)",
+    "code": "(4+1)-XSD180-ZN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 24,
+    "netWeight": 180,
+    "packType": "Gói"
+  },
+  {
+    "id": "(4+1)-MCNV200-ZN120-X",
+    "name": "Mắc ca nức vỏ gói 200g(X)(Hàng đóng combo 4+1)",
+    "code": "(4+1)-MCNV200-ZN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 24,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "NDH200-ZN158-X",
+    "name": " Nougat Dưa hấu Gói 200g(X)(ZN158)",
+    "code": "NDH200-ZN158-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "NGM200-ZN158-X",
+    "name": " Nougat Matcha Gói 200g(X)",
+    "code": "NGM200-ZN158-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "NNB200-ZN158-X",
+    "name": " Nougat Nguyên bản Gói 200g(X)(ZN158)",
+    "code": "NNB200-ZN158-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "XSD350-ZN158-C",
+    "name": "Xoài gói 350g",
+    "code": "XSD350-ZN158-C",
+    "barcodeProduct": "8935292207924",
+    "defaultQty": 12,
+    "netWeight": 350,
+    "packType": "Gói"
+  },
+  {
+    "id": "MKTSC250-ZN140-C",
+    "name": "Mix kỷ tử sachi gói 250",
+    "code": "MKTSC250-ZN140-C",
+    "barcodeProduct": "8935292207931",
+    "defaultQty": 24,
+    "netWeight": 250,
+    "packType": "Gói"
+  },
+  {
+    "id": "S-HDCRMD200-ZN180-X",
+    "name": "SAMPLING - Điều caramel dừa Gói 200g(X)",
+    "code": "S-HDCRMD200-ZN180-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "S-HDVP200-ZN180-X",
+    "name": "SAMPLING - Điều vị phở Gói 200g(X)(ZN180)",
+    "code": "S-HDVP200-ZN180-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "S-HDDD200-ZN180-X",
+    "name": "SAMPLING - Điều đường đen Gói 200g(X)",
+    "code": "S-HDDD200-ZN180-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "NGM150-TNT-X",
+    "name": "Nougat matcha gói 150g(X)",
+    "code": "NGM150-TNT-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 150,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDRMVL80-BBN120-X",
+    "name": "Điều lụa Gói 80g(X)",
+    "code": "HDRMVL80-BBN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 48,
+    "netWeight": 80,
+    "packType": "Gói"
+  },
+  {
+    "id": "XSD100-BBN120-X",
+    "name": "Xoài Gói 100g(X)",
+    "code": "XSD100-BBN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 48,
+    "netWeight": 100,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDCRMD125-250D-X",
+    "name": "Điều caramel dừa Hộp 125g(X)",
+    "code": "HDCRMD125-250D-X",
+    "barcodeProduct": null,
+    "defaultQty": 48,
+    "netWeight": 125,
+    "packType": "Hộp"
+  },
+  {
+    "id": "HDDD30-MTN20-X",
+    "name": "Điều đường đen gói 30g(X)",
+    "code": "HDDD30-MTN20-X",
+    "barcodeProduct": null,
+    "defaultQty": 1,
+    "netWeight": 30,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDVP30-MTN20-X",
+    "name": "Điều vị phở gói 30g(X)",
+    "code": "HDVP30-MTN20-X",
+    "barcodeProduct": null,
+    "defaultQty": 1,
+    "netWeight": 30,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDCRMD30-MTN20-X",
+    "name": "Điều caramel dừa gói 30g(X)",
+    "code": "HDCRMD30-MTN20-X",
+    "barcodeProduct": null,
+    "defaultQty": 1,
+    "netWeight": 30,
+    "packType": "Gói"
   }
 ]
