@@ -1866,7 +1866,7 @@
     "id": "HDRMVL125-250D-C",
     "name": "Điều lụa Hộp 125g",
     "code": "HDRMVL125-250D-C",
-    "barcodeProduct": "8935292200406",
+    "barcodeProduct": "8935292207207",
     "defaultQty": 24.0,
     "netWeight": 125.0,
     "packType": "Hộp"
@@ -6325,5 +6325,86 @@
     "defaultQty": 1,
     "netWeight": 30,
     "packType": "Gói"
+  },
+  {
+    "id": "NV30-MTN20-X",
+    "name": "Nho vàng gói 30g(X)",
+    "code": "NV30-MTN20-X",
+    "netWeight": 30,
+    "defaultQty": 1,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "BXN100-BBN120-X",
+    "name": "Bí xanh nướng gói 100g(X)",
+    "code": "BXN100-BBN120-X",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "HNN100-BBN120-X",
+    "name": "Hạnh nhân nướng gói 100g(X)",
+    "code": "HNN100-BBN120-X",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "OCN80-BBN120-X",
+    "name": "Óc chó nướng gói 80g(X)",
+    "code": "OCN80-BBN120-X",
+    "netWeight": 80,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "SNDH250-ZN200-X",
+    "name": "Sampling nougat dưa hấu gói 250g(X)",
+    "code": "SNDH250-ZN200-X",
+    "netWeight": 250,
+    "defaultQty": 10,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "NGM150-T8CQX-X",
+    "name": "Nougat matcha gói 150g(X)",
+    "code": "NGM150-T8CQX-X",
+    "netWeight": 150,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "NNB150-T8CQX-X",
+    "name": "Nougat Nguyên bản gói 150g(X)",
+    "code": "NNB150-T8CQX-X",
+    "netWeight": 150,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "NDH150-T8CQX-X",
+    "name": "Nougat dưa hấu gói 159g(X)",
+    "code": "NDH150-T8CQX-X",
+    "netWeight": 150,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "DSG100-ZN120-C",
+    "name": "Dừa sấy giòn gói 100g",
+    "code": "DSG100-ZN120-C",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": "8935292207955"
   }
 ]
