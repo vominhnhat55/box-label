@@ -12,6 +12,7 @@ type Props = {
   barcodeProduct: string;
   netWeight: number;
   packType: string;
+  isHN?: boolean;
 };
 export default function BoxLabel({
   name,
@@ -24,6 +25,7 @@ export default function BoxLabel({
   barcodeProduct,
   netWeight,
   packType,
+  isHN,
 }: Props) {
   const productBarcodeRef = useRef<SVGSVGElement | null>(null);
   useEffect(() => {
@@ -45,7 +47,7 @@ export default function BoxLabel({
 
   return (
     <div
-      className='print-area-box w-[100mm] h-[80mm] border-2 border-[#1f2937] bg-[#ffffff] flex flex-col text-black'
+      className='print-area-box relative w-[100mm] h-[80mm] border-2 border-[#1f2937] bg-[#ffffff] flex flex-col text-black'
       style={{boxSizing: 'border-box'}}
     >
       {/* HEADER - Logo và thông tin công ty */}
@@ -82,8 +84,16 @@ export default function BoxLabel({
         </div>
       </div>
       {/* THÔNG TIN SẢN PHẨM */}
-      <div className='px-2.5 py-1.5 border-b border-[#1f2937] bg-[#ffffff]'>
-        <div className='flex justify-between items-start'>
+      <div className='relative px-2.5 py-1.5 border-b border-[#1f2937] bg-[#ffffff]'>
+        {isHN && (
+          <span
+            className='absolute top-0 right-0 h-full w-5 bg-black text-white font-extrabold text-[14px] tracking-widest flex items-center justify-center'
+            style={{writingMode: 'vertical-rl'}}
+          >
+            HÀ NỘI
+          </span>
+        )}
+        <div className='flex justify-between items-start pr-5'>
           <div className='space-y-1'>
             <div className='flex items-center'>
               <span className=' font-medium text-[10px]'>Mã SP:</span>
@@ -123,7 +133,6 @@ export default function BoxLabel({
           </div>
         </div>
       </div>
-
       {/* DATES - 3 cột hoặc 2 cột nếu không có ngày đóng gói */}
       <div className='border-b border-[#1f2937] bg-[#ffffff] '>
         <div className='flex justify-between justify-between items-center'>
@@ -152,9 +161,7 @@ export default function BoxLabel({
           </div>
         </div>
       </div>
-
       {/* BARCODE - Bottom section */}
-
       {barcodeProduct ? (
         <div className='px-2 py-1  flex-1 flex flex-col justify-center'>
           <div className='flex justify-center items-center'>

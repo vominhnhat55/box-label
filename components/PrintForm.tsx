@@ -21,6 +21,7 @@ export default function PrintForm() {
     note: '',
     netWeight: 0,
     packType: '',
+    isHN: false,
   });
   // Filter products based on search query
   const filteredProducts = products.filter(
@@ -318,7 +319,7 @@ export default function PrintForm() {
             onChange={(e) => handleDateChange('hsd', e.target.value)}
           />
         </div>
-        <label className='text-black font-medium mb-1 block'>
+        {/* <label className='text-black font-medium mb-1 block'>
           Ghi chú<span className='text-gray-500 text-xs'>(Tùy chọn)</span>
         </label>
         <input
@@ -326,7 +327,17 @@ export default function PrintForm() {
           placeholder='Ghi chú...'
           value={data.note}
           onChange={(e) => handleNoteChange(e.target.value)}
-        />
+        /> */}
+        {/* Thùng hàng giao Hà Nội */}
+        <label className='flex items-center gap-2 cursor-pointer select-none'>
+          <input
+            type='checkbox'
+            className='w-4 h-4 accent-blue-600'
+            checked={data.isHN}
+            onChange={(e) => setData({...data, isHN: e.target.checked})}
+          />
+          <span className='text-black font-medium'>Hàng Hà Nội</span>
+        </label>
         <div className='flex gap-2 flex-wrap'>
           <button
             disabled={!isValid}
