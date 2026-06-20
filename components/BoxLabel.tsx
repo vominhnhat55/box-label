@@ -87,7 +87,15 @@ export default function BoxLabel({
           <div className='space-y-1'>
             <div className='flex items-center'>
               <span className=' font-medium text-[10px]'>Mã SP:</span>
-              <span className='font-bold  text-sm ml-1'>{code}</span>
+              <span
+                className={`font-bold text-sm ml-1 ${
+                  code.endsWith('C')
+                    ? 'underline decoration-2 underline-offset-2'
+                    : ''
+                }`}
+              >
+                {code}
+              </span>
             </div>
             <div className='flex items-center'>
               <span className=' font-medium text-[10px]'>Số lô/series:</span>
@@ -100,7 +108,8 @@ export default function BoxLabel({
                 KLT:
               </span>
               <span className='font-bold text-[#111827] text-sm ml-1'>
-                {netWeight}g/{packType}
+                {netWeight >= 1000 ? netWeight / 1000 : netWeight}
+                {netWeight >= 1000 ? 'Kg' : 'g'}/{packType}
               </span>
             </div>
             <div className='text-right'>
