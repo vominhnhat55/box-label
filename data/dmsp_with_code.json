@@ -6406,5 +6406,41 @@
     "defaultQty": 24,
     "packType": "Gói",
     "barcodeProduct": "8935292207955"
+  },
+  {
+    "id": "OCN80-ZN120-X",
+    "name": "Óc chó nướng gói 80g(X)",
+    "code": "OCN80-ZN120-X",
+    "netWeight": 80,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "BXN100-ZN120-X",
+    "name": "Bí xanh nướng gói 100g(X)",
+    "code": "BXN100-ZN120-X",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "HNN100-ZN120-X",
+    "name": "Hạnh nhân nướng gói 100g(X)",
+    "code": "HNN100-ZN120-X",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
+  },
+  {
+    "id": "HDRVML100-ZN120-X",
+    "name": "Điều vỏ lụa gói 100g(X)",
+    "code": "HDRVML100-ZN120-X",
+    "netWeight": 100,
+    "defaultQty": 24,
+    "packType": "Gói",
+    "barcodeProduct": ""
   }
 ]
