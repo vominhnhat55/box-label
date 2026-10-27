@@ -5,7 +5,7 @@
     "code": "BMONC50-HCX-C",
     "barcodeProduct": "8935292207283",
     "defaultQty": 30.0,
-    "netWeight": 500.0,
+    "netWeight": 50.0,
     "packType": "Hộp"
   },
   {
@@ -1607,7 +1607,7 @@
     "code": "HDgVN1000-ZN250-C",
     "barcodeProduct": "8935292205449",
     "defaultQty": 6.0,
-    "netWeight": null,
+    "netWeight": 1000,
     "packType": "Gói"
   },
   {
@@ -4276,7 +4276,7 @@
   },
   {
     "id": "NNB200-TNT-X",
-    "name": "Nougat nguyên bản gói 100g(X)",
+    "name": "Nougat nguyên bản gói 200g(X)",
     "code": "NNB200-TNT-X",
     "barcodeProduct": null,
     "defaultQty": 12.0,
@@ -5315,7 +5315,7 @@
     "code": "VBSD300-HT369-X",
     "barcodeProduct": "8935292207122",
     "defaultQty": 12.0,
-    "netWeight": 350.0,
+    "netWeight": 300.0,
     "packType": "Hộp"
   },
   {
@@ -5968,7 +5968,7 @@
   },
   {
     "id": "HNN1000-ZN200-X",
-    "name": "Hạnh nhân nướng Gói 200g(X)",
+    "name": "Hạnh nhân nướng Gói 1Kg(X)",
     "code": "HNN1000-ZN200-X",
     "barcodeProduct": "8935292202394",
     "defaultQty": 10.0,
@@ -6085,7 +6085,7 @@
   },
   {
     "id": "MKTSC150-250D-C",
-    "name": "Mix Kỷ tử - Sachi hộp 250g",
+    "name": "Mix Kỷ tử - Sachi hộp 150g",
     "code": "MKTSC150-250D-C",
     "barcodeProduct": "8935292207221",
     "defaultQty": 24.0,
