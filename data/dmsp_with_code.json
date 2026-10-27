@@ -6442,5 +6442,203 @@
     "defaultQty": 24,
     "packType": "Gói",
     "barcodeProduct": ""
+  },
+  {
+    "id": "TOHY100-HVĐ859-C",
+    "name": "Trà Oolong Hoa Yên (Hộp 100g)",
+    "code": "TOHY100-HVĐ859-C",
+    "barcodeProduct": "8935292207245",
+    "defaultQty": 10,
+    "netWeight": 100,
+    "packType": "Hộp"
+  },
+  {
+    "id": "TON100-HVXN859-C",
+    "name": "Trà Oolong nhài hộp 100g",
+    "code": "TON100-HVXN859-C",
+    "barcodeProduct": "8935292207863",
+    "defaultQty": 10,
+    "netWeight": 100,
+    "packType": "Hộp"
+  },
+  {
+    "id": "TOQH100-HVX859-C",
+    "name": "Trà Oolong Quế Hoa (Hộp 100g)",
+    "code": "TOQH100-HVX859-C",
+    "barcodeProduct": "8935292207269",
+    "defaultQty": 10,
+    "netWeight": 100,
+    "packType": "Hộp"
+  },
+  {
+    "id": "TPNQ150-HTTD-C",
+    "name": "Trà Phổ Nhĩ Quýt (Hộp 150g)",
+    "code": "TPNQ150-HTTD-C",
+    "barcodeProduct": "8935292207276",
+    "defaultQty": 10,
+    "netWeight": 150,
+    "packType": "Hộp"
+  },
+  {
+    "id": "CPTLUL125-C",
+    "name": "Cà phê túi lọc Ủ lạnh Gói 125g",
+    "code": "CPTLUL125-C",
+    "barcodeProduct": "8935292207412",
+    "defaultQty": 8,
+    "netWeight": 125,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPULFR100-8CD20-C",
+    "name": "Cà phê ủ lạnh Fine Robusta (Gói 100g(10 gói x 10g))",
+    "code": "CPULFR100-8CD20-C",
+    "barcodeProduct": "8935292208013",
+    "defaultQty": 8,
+    "netWeight": 100,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPFRB200-8CD20-C",
+    "name": "Cà phê Fine Robusta Brewing 200g",
+    "code": "CPFRB200-8CD20-C",
+    "barcodeProduct": "8935292208020",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPFRB500-8CD265-C",
+    "name": "Cà phê Fine Robusta Brewing 500g",
+    "code": "CPFRB500-8CD265-C",
+    "barcodeProduct": "8935292208037",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPPGRH72-C",
+    "name": "Cà phê phin giấy Robusta Honey 72g (hộp 6 góix12g)",
+    "code": "CPPGRH72-C",
+    "barcodeProduct": "8935292208044",
+    "defaultQty": 8,
+    "netWeight": 72,
+    "packType": "Hộp"
+  },
+  {
+    "id": "CPPGR72-C",
+    "name": "Cà phê phin giấy Robusta High Quality 72g (hộp 6 góix12g)",
+    "code": "CPPGR72-C",
+    "barcodeProduct": "8935292208099",
+    "defaultQty": 8,
+    "netWeight": 72,
+    "packType": "Hộp"
+  },
+  {
+    "id": "CPRHVP200-8CXD20-C",
+    "name": "Cà phê Robusta Honey Vietnamese Phin gói 200g",
+    "code": "CPRHVP200-8CXD20-C",
+    "barcodeProduct": "8935292208051",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRHVP500-8CXD265-C",
+    "name": "Cà phê Robusta Honey Vietnamese Phin Gói 500g",
+    "code": "CPRHVP500-8CXD265-C",
+    "barcodeProduct": "8935292208075",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRHE200-8CXD20-C",
+    "name": "Cà phê Robusta Honey Espresso Gói 200g",
+    "code": "CPRHE200-8CXD20-C",
+    "barcodeProduct": "8935292208068",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRHE500-8CXD265-C",
+    "name": "Cà phê Robusta Honey Espresso Gói 500g",
+    "code": "CPRHE500-8CXD265-C",
+    "barcodeProduct": "8935292208082",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRVP200-8CXL20-C",
+    "name": "Cà phê Robusta Vietnamese Phin Gói 200g",
+    "code": "CPRVP200-8CXL20-C",
+    "barcodeProduct": "8935292208105",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRVP500-8CXL265-C",
+    "name": "Cà phê Robusta Vietnamese Phin Gói 500g",
+    "code": "CPRVP500-8CXL265-C",
+    "barcodeProduct": "8935292208112",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRE200-8CXL20-C",
+    "name": "Cà phê Robusta Espresso Gói 200g",
+    "code": "CPRE200-8CXL20-C",
+    "barcodeProduct": "8935292208129",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPRE500-8CXL265-C",
+    "name": "Cà phê Robusta Espresso Gói 500g",
+    "code": "CPRE500-8CXL265-C",
+    "barcodeProduct": "8935292208136",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPASB200-8CVD20-C",
+    "name": "Cà phê Arabica Specialty Brewing Gói 200g",
+    "code": "CPASB200-8CVD20-C",
+    "barcodeProduct": "8935292208143",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPASE200-8CVD20-C",
+    "name": "Cà phê Arabica Specialty Espresso Gói 200g",
+    "code": "CPASE200-8CVD20-C",
+    "barcodeProduct": "8935292208150",
+    "defaultQty": 8,
+    "netWeight": 200,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPASE500-8CVD265-C",
+    "name": "Cà phê Arabica Specialty Espresso Gói 500g",
+    "code": "CPASE500-8CVD265-C",
+    "barcodeProduct": "8935292208167",
+    "defaultQty": 8,
+    "netWeight": 500,
+    "packType": "Gói"
+  },
+  {
+    "id": "CPULAS100-8CVD20-C",
+    "name": "Cà phê ủ lạnh Arabica Specialty (Gói 100g(10 gói x 10g))",
+    "code": "CPULAS100-8CVD20-C",
+    "barcodeProduct": "8935292208204",
+    "defaultQty": 8,
+    "netWeight": 100,
+    "packType": "Gói"
   }
 ]
