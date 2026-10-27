@@ -392,7 +392,7 @@
     "code": "CPRACD1000-ZMKB1533-C",
     "barcodeProduct": "8935292207313",
     "defaultQty": 8.0,
-    "netWeight": 100.0,
+    "netWeight": 1000.0,
     "packType": "Gói"
   },
   {
@@ -419,7 +419,7 @@
     "code": "CPRAHCD1000-ZMKB1533-C",
     "barcodeProduct": "8935292207344",
     "defaultQty": 8.0,
-    "netWeight": 100.0,
+    "netWeight": 1000.0,
     "packType": "Gói"
   },
   {
@@ -446,7 +446,7 @@
     "code": "CPRR1000-ZMKB1533-C",
     "barcodeProduct": "8935292207375",
     "defaultQty": 8.0,
-    "netWeight": 100.0,
+    "netWeight": 1000.0,
     "packType": "Gói"
   },
   {
@@ -473,7 +473,7 @@
     "code": "CPRRH1000-ZMKB1533-C",
     "barcodeProduct": "8935292207405",
     "defaultQty": 8.0,
-    "netWeight": 100.0,
+    "netWeight": 1000.0,
     "packType": "Gói"
   },
   {
