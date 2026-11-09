@@ -6640,5 +6640,32 @@
     "defaultQty": 8,
     "netWeight": 100,
     "packType": "Gói"
+  },
+  {
+    "id": "NGCPS150-TNT-C",
+    "name": "Nougat vị Cà Phê Sữa (Gói 150g)",
+    "code": "NGCPS150-TNT-C",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 150,
+    "packType": "Gói"
+  },
+  {
+    "id": "NGCPS150-TNT-X",
+    "name": "Nougat vị Cà Phê Sữa (Gói 150g(X))",
+    "code": "NGCPS150-TNT-X",
+    "barcodeProduct": null,
+    "defaultQty": 12,
+    "netWeight": 150,
+    "packType": "Gói"
+  },
+  {
+    "id": "SNCPS250-ZN200-X",
+    "name": "Sampling Nougat cà phê sữa gói 250g(X)",
+    "code": "SNCPS250-ZN200-X",
+    "barcodeProduct": null,
+    "defaultQty": 10,
+    "netWeight": 250,
+    "packType": "Gói"
   }
 ]
