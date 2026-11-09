@@ -47,7 +47,7 @@ export default function BoxLabel({
 
   return (
     <div
-      className='print-area-box relative w-[100mm] h-[80mm] border-2 border-[#1f2937] bg-[#ffffff] flex flex-col text-black'
+      className='print-area-box relative w-[100mm] h-[80mm] border-y-2 border-[#1f2937] bg-[#ffffff] flex flex-col text-black'
       style={{boxSizing: 'border-box'}}
     >
       {/* HEADER - Logo và thông tin công ty */}
