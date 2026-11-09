@@ -6667,5 +6667,50 @@
     "defaultQty": 10,
     "netWeight": 250,
     "packType": "Gói"
+  },
+  {
+    "id": "MKTSC100-ZN120-X",
+    "name": "Mix Kỷ tử - Sachi Gói 100g(X)",
+    "code": "MKTSC100-ZN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 24.0,
+    "netWeight": 100.0,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDN100-ZN120-X",
+    "name": "Điều nướng Gói 100g(X)",
+    "code": "HDN100-ZN120-X",
+    "barcodeProduct": null,
+    "defaultQty": 24.0,
+    "netWeight": 100.0,
+    "packType": "Gói"
+  },
+  {
+    "id": "HDRMVL100-ZN120-X",
+    "name": "Hạt điều rang muối hộp 100g ",
+    "code": "HDRMVL100-ZN120-X",
+    "barcodeProduct": "8935292206828",
+    "defaultQty": 23.0,
+    "netWeight": 100.0,
+    "packType": "Gói"
+  },
+  {
+    "id": "XSD250-T1493-X",
+    "name": "Xoài hộp 250g(X)(T1493)",
+    "code": "XSD250-T1493-X",
+    "barcodeProduct": null,
+    "defaultQty": 18,
+    "netWeight": 250,
+    "packType": "Hộp"
+  },
+  {
+    "id": "MK250-T1493-X",
+    "name": "Mơ hộp 250g(X)(T1493)",
+    "code": "MK250-T1493-X",
+    "barcodeProduct": null,
+    "defaultQty": 18,
+    "netWeight": 250,
+    "packType": "Hộp"
   }
 ]
